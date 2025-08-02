@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center rounded-full bg-[#171717] px-6 py-4">
+    <div className="flex justify-between items-center rounded-full m-6 bg-[#171717] px-6 py-4">
       <div className="flex items-center gap-2">
         <span className="bg-[#D1F701] px-2 rounded-md font-bold text-center">
           P
