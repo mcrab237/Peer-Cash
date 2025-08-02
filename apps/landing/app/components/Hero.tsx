@@ -8,12 +8,19 @@ import frame2 from "../../public/Frame57.png";
 import frame3 from "../../public/Frame60.png";
 import frame4 from "../../public/Frame103.png";
 import frame5 from "../../public/Frame2.png";
+import bgImage from "../../public/bg.png";
 
 import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div
+      className="bg-cover bg-center bg-repeat "
+      style={{
+        backgroundImage: `url(${bgImage.src})`,
+        backgroundColor: "#F3F3F5",
+      }}
+    >
       <Navbar />
 
       {/**First Part */}
