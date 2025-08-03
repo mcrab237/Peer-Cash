@@ -1,5 +1,6 @@
 import Hero from "./sections/Hero";
 import SpendingSections from "./sections/SpendingSections";
+import TransformationSection from "./sections/TransformationSection";
 import Trusted from "./sections/Trusted";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Trusted />
       <SpendingSections/>
+      <TransformationSection/>
     </div>
   );
 }
