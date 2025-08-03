@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import Image from "next/image";
 import security from "../../public/secure.png";
 import iphone from "../../public/iPhone.png";
@@ -10,7 +10,7 @@ import frame4 from "../../public/Frame103.png";
 import frame5 from "../../public/Frame2.png";
 import bgImage from "../../public/bg.png";
 
-import Button from "./Button";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (
