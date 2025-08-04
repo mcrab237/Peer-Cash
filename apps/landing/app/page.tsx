@@ -1,3 +1,4 @@
+import FaqSection from "./sections/FaqSection";
 import Hero from "./sections/Hero";
 import SpendingSections from "./sections/SpendingSections";
 import TransformationSection from "./sections/TransformationSection";
@@ -8,8 +9,9 @@ export default function Home() {
     <div className="">
       <Hero />
       <Trusted />
-      <SpendingSections/>
-      <TransformationSection/>
+      <SpendingSections />
+      <TransformationSection />
+      <FaqSection />
     </div>
   );
 }

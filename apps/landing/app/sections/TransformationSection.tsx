@@ -73,8 +73,8 @@ const TransformationSection = () => {
               </div>
             </div>
 
-            <button className="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200">
-              Read More
+            <button className="bg-[#171717] text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200">
+              Get Started
             </button>
           </div>
         </div>
