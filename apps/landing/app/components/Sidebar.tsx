@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Vector from "../../public/Vector.png";
 import Link from "next/link";
-import { Interface } from "readline";
 import { RxCross1 } from "react-icons/rx";
 
 const Menu = ({
