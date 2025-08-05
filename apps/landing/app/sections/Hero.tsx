@@ -34,13 +34,13 @@ const Hero = () => {
 
         {/**Header */}
         <div className="flex justify-center mt-4">
-          <h1 className="text-center text-5xl max-w-2xl leading-14 font-semibold">
+          <h1 className="text-center text-5xl max-w-2xl leading-14 font-manrope font-bold">
             Revolutionizing Finance for a Better Tomorrow, Today
           </h1>
         </div>
 
         <div className="flex justify-center mt-4">
-          <p className="text-center max-w-md ">
+          <p className="text-center max-w-md font-inter">
             Fintech services leverage technology to enhance financial processes,
             offering innovative solutions for banking
           </p>

@@ -15,7 +15,7 @@ const TransformationSection = () => {
 
           {/* Content */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 leading-tight mb-6">
+            <h2 className="font-bold font-manrope text-3xl sm:text-4xl lg:text-5xl text-gray-900 leading-tight mb-6">
               Smooth and Easy International Transfers.{" "}
             </h2>
 

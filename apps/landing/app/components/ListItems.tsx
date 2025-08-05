@@ -16,7 +16,9 @@ const ListItems = ({ title, description, logo, imageAlt }: ItemProps) => {
         <Image src={logo} alt={imageAlt} className="w-6 h-6" />
       </div>
       <div className="flex-1">
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
+        <h3 className="text-lg font-manrope font-semibold text-gray-900 mb-2">
+          {title}
+        </h3>
         <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
       </div>
     </div>

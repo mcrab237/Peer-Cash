@@ -33,11 +33,11 @@ const FaqSection = () => {
           <div className="order-1 lg:order-1 lg:col-span-1 text-center lg:text-left">
             <div className="mb-8">
               <p className="text-gray-500 text-sm font-medium mb-2">FAQ'S</p>
-              <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 leading-tight lg:max-w-3">
+              <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-manrope leading-tight lg:max-w-3">
                 Frequently Asked Questions
               </h2>
             </div>
- 
+
             <div className="text-gray-600 text-lg ">
               <p className="mb-4">Any questions?</p>
               <p className="text-[#5945FD] text-3xl"> peercash@fintech.com</p>

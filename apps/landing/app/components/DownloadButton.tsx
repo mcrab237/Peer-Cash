@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const DownloadButton = ({ store, image, firstText }: ButtonProps) => {
   return (
-    <div className="bg-white rounded-4xl px-4 py-1 sm:px-4 sm:py-1 flex items-center gap-3 min-w-[140px] sm:min-w-[160px] cursor-pointer hover:bg-gray-100 transition-colors duration-200 shadow-md hover:shadow-lg">
+    <div className="bg-white rounded-4xl px-4 py-1 sm:px-5 sm:py-2 flex items-center gap-3 min-w-[140px] sm:min-w-[160px] cursor-pointer hover:bg-gray-100 transition-colors duration-200 shadow-md hover:shadow-lg">
       <Image
         src={image}
         alt={store}

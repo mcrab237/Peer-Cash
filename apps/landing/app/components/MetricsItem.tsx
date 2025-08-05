@@ -16,7 +16,7 @@ const MetricsItem = ({ image, number, description, alt }: MetricsProps) => {
         <div>
           <Image src={image} alt={alt} />
         </div>
-        <h2 className="font-bold text-3xl">{number}</h2>
+        <h2 className="font-bold font-manrope text-3xl">{number}</h2>
       </div>
       <div>
         <p className="md:max-w-xs mt-4 text-gray-600 max-md:text-center">{description}</p>

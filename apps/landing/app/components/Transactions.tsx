@@ -31,7 +31,9 @@ const Transactions = ({
           />
         </div>
         <div>
-          <h3 className="font-semibold text-gray-900">{company}</h3>
+          <h3 className="font-bold font-manrope text-gray-900">
+            {company}
+          </h3>
           <p className="text-sm text-gray-500">{summary}</p>
         </div>
       </div>
