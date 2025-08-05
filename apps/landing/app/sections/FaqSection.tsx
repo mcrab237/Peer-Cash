@@ -32,7 +32,9 @@ const FaqSection = () => {
           {/* Left Content - Header and Contact (Column 1) */}
           <div className="order-1 lg:order-1 lg:col-span-1 text-center lg:text-left">
             <div className="mb-8">
-              <p className="text-gray-500 text-sm font-medium mb-2">FAQ'S</p>
+              <p className="text-gray-500 text-sm font-medium mb-2">
+                FAQ&apos;S
+              </p>
               <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-manrope leading-tight lg:max-w-3">
                 Frequently Asked Questions
               </h2>

@@ -14,7 +14,7 @@ const SpendingSections = () => {
           {/* Left Content */}
           <div className="order-1 lg:order-1">
             <h1 className="text-3xl sm:text-4xl font-manrope lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Let's Start Sending Your Money
+              Let&apos;s Start Sending Your Money
             </h1>
             <p className="text-gray-600 text-base sm:text-lg mb-12 leading-relaxed max-w-md">
               Integrating advanced technologies, fintech reshapes the financial

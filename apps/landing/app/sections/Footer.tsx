@@ -29,8 +29,8 @@ const Footer = () => {
                 </h2>
                 <p className="text-white/80 text-sm sm:text-base lg:text-lg mb-8 sm:mb-10 lg:mb-12 max-w-2xl leading-tight mx-auto">
                   Enjoy seamless navigation, exclusive content, and personalized
-                  experiences right at your fingertips. Don't miss out on this
-                  opportunity to enhance your daily routine with our
+                  experiences right at your fingertips. Don&apos;t miss out on
+                  this opportunity to enhance your daily routine with our
                   user-friendly, free mobile app.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
