@@ -15,7 +15,7 @@ import Button from "../components/Button";
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-center bg-repeat "
+      className="bg-cover bg-center bg-repeat"
       style={{
         backgroundImage: `url(${bgImage.src})`,
         backgroundColor: "#F3F3F5",
@@ -24,8 +24,8 @@ const Hero = () => {
       <Navbar />
 
       {/**First Part */}
-      <div>
-        <div className="flex gap-2 bg-[#E9E9E9] justify-center w-fit mx-auto items-center px-2 py-1 rounded-4xl mt-10">
+      <div className="animate-fadeInUp">
+        <div className="flex gap-2 bg-[#E9E9E9] justify-center w-fit mx-auto items-center px-2 py-1 rounded-4xl mt-10 animate-fadeInUp [animation-delay:200ms]">
           <span className="bg-white p-1 rounded-4xl">
             <Image width={16} src={security} alt="secure lending" />
           </span>
@@ -34,58 +34,70 @@ const Hero = () => {
 
         {/**Header */}
         <div className="flex justify-center mt-4">
-          <h1 className="text-center text-5xl max-w-2xl leading-14 font-manrope font-bold">
+          <h1 className="text-center text-5xl max-w-2xl leading-14 font-manrope font-bold animate-fadeInUp [animation-delay:400ms]">
             Revolutionizing Finance for a Better Tomorrow, Today
           </h1>
         </div>
 
         <div className="flex justify-center mt-4">
-          <p className="text-center max-w-md font-inter">
+          <p className="text-center max-w-md font-inter animate-fadeInUp [animation-delay:600ms]">
             Fintech services leverage technology to enhance financial processes,
             offering innovative solutions for banking
           </p>
         </div>
 
-        <div className="flex justify-center my-6 gap-4 mb-12">
+        <div className="flex justify-center my-6 gap-4 mb-12 animate-fadeInUp [animation-delay:800ms]">
           <Button text="Get Started" textColor="#000" color="#D1F701" />
           <Button text="Request a demo" textColor="#fff" color="#5945FD" />
         </div>
       </div>
 
-      <div className="relative flex justify-center overflow-hidden">
+      <div className="relative flex justify-center overflow-hidden animate-fadeInUp [animation-delay:1000ms]">
         {/* Container for all images with relative positioning */}
         <div className="relative">
-          <Image src={iphone} alt="iphone image" />
+          <div className="animate-scaleIn [animation-delay:1200ms]">
+            <Image src={iphone} alt="iphone image" />
+          </div>
 
           <div className="absolute left-[-120px] top-[20%] space-y-4">
-            <Image
-              src={frame1}
-              alt="percentage amount"
-              className="block relative right-30 bottom-15 transition-all max-md:right-10"
-            />
-            <Image
-              src={frame2}
-              alt="total income"
-              className="block relative right-24 bottom-28 max-md:right-10 transition-all"
-            />
+            <div className="animate-slideInLeft [animation-delay:1400ms]">
+              <Image
+                src={frame1}
+                alt="percentage amount"
+                className="block relative right-30 bottom-15 transition-all max-md:right-10"
+              />
+            </div>
+            <div className="animate-slideInLeft [animation-delay:1600ms]">
+              <Image
+                src={frame2}
+                alt="total income"
+                className="block relative right-24 bottom-28 max-md:right-10 transition-all"
+              />
+            </div>
           </div>
 
           <div className="absolute right-[-120px] top-[10%] space-y-4">
-            <Image
-              src={frame3}
-              alt="total income 2"
-              className="block relative left-36"
-            />
-            <Image
-              src={frame4}
-              alt="people concente"
-              className="block relative left-25 bottom-5 max-md:left-15 transition-all"
-            />
-            <Image
-              src={frame5}
-              alt="arrow up"
-              className="block relative left-80 bottom-12 "
-            />
+            <div className="animate-slideInRight [animation-delay:1400ms]">
+              <Image
+                src={frame3}
+                alt="total income 2"
+                className="block relative left-36"
+              />
+            </div>
+            <div className="animate-slideInRight [animation-delay:1800ms]">
+              <Image
+                src={frame4}
+                alt="people concente"
+                className="block relative left-25 bottom-5 max-md:left-15 transition-all"
+              />
+            </div>
+            <div className="animate-slideInRight [animation-delay:2000ms]">
+              <Image
+                src={frame5}
+                alt="arrow up"
+                className="block relative left-80 bottom-12"
+              />
+            </div>
           </div>
         </div>
       </div>

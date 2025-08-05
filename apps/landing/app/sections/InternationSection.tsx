@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDone } from "react-icons/md";
 import Image from "next/image";
-import image from "../../public/world_view.png"
+import image from "../../public/world_view.png";
 
 const TransformationSection = () => {
   return (

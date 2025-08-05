@@ -72,4 +72,3 @@ const Trusted = () => {
 };
 
 export default Trusted;
-0
