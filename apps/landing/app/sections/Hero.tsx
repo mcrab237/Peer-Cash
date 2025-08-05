@@ -56,7 +56,7 @@ const Hero = () => {
         {/* Container for all images with relative positioning */}
         <div className="relative">
           <div className="animate-scaleIn [animation-delay:1200ms]">
-            <Image src={iphone} alt="iphone image" />
+            <Image src={iphone} className="w-70 md:w-full" alt="iphone image" />
           </div>
 
           <div className="absolute left-[-120px] top-[20%] space-y-4">
@@ -71,7 +71,7 @@ const Hero = () => {
               <Image
                 src={frame2}
                 alt="total income"
-                className="block relative right-24 bottom-28 max-md:right-10 transition-all"
+                className="block relative right-24 md:bottom-28 bottom-18 max-md:right-10 transition-all"
               />
             </div>
           </div>
@@ -81,14 +81,14 @@ const Hero = () => {
               <Image
                 src={frame3}
                 alt="total income 2"
-                className="block relative left-36"
+                className="block relative left-20 md:left-36"
               />
             </div>
             <div className="animate-slideInRight [animation-delay:1800ms]">
               <Image
                 src={frame4}
                 alt="people concente"
-                className="block relative left-25 bottom-5 max-md:left-15 transition-all"
+                className="block relative left-25 bottom-15 md:bottom-5 max-md:left-15 transition-all"
               />
             </div>
             <div className="animate-slideInRight [animation-delay:2000ms]">
