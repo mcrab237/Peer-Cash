@@ -24,11 +24,11 @@ const Menu = ({
 
       {/* Sidebar */}
       <div
-        className={`fixed h-full bg-[#171717] right-0 top-0 w-80 shadow-2xl border-l border-gray-800 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed h-full bg-[#171717] right-0 top-0 w-72 sm:w-80 shadow-2xl border-l border-gray-800 z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col h-full p-6">
+        <div className="flex flex-col h-full p-4 sm:p-6">
           {/* Header */}
           <div className="flex justify-between items-center pb-8 border-b border-gray-800">
             <div className="flex items-center gap-3">
@@ -121,7 +121,7 @@ const Menu = ({
             style={{ transitionDelay: isOpen ? "350ms" : "0ms" }}
           >
             <Link
-              className="block w-full text-center text-black bg-[#D1F701] font-semibold px-6 py-4 rounded-4xl hover:bg-[#b8d401] hover:scale-[1.02] transition-all duration-200 shadow-lg"
+              className="block w-full text-center text-black bg-[#D1F701] font-semibold px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base rounded-4xl hover:bg-[#b8d401] hover:scale-[1.02] transition-all duration-200 shadow-lg"
               href="login"
             >
               Download App

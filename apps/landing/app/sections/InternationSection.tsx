@@ -47,7 +47,7 @@ const TransformationSection = () => {
               </div>
             </div>
 
-            <button className="bg-[#171717] text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200">
+            <button className="bg-[#171717] text-white px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-full font-medium hover:bg-gray-800 transition-colors duration-200 w-full sm:w-auto">
               Get Started
             </button>
           </div>

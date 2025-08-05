@@ -8,9 +8,16 @@ interface MetricsProps {
   number: string;
   description: string;
   alt: string;
+  isFirst?: boolean;
 }
 
-const MetricsItem = ({ image, number, description, alt }: MetricsProps) => {
+const MetricsItem = ({
+  image,
+  number,
+  description,
+  alt,
+  isFirst = false,
+}: MetricsProps) => {
   const [count, setCount] = useState(0);
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -59,21 +66,29 @@ const MetricsItem = ({ image, number, description, alt }: MetricsProps) => {
   };
 
   return (
-    <div ref={ref} className="px-12 py-10">
-      <div className="flex max-md:justify-center items-center gap-3">
+    <div
+      ref={ref}
+      className="px-4 sm:px-6 md:px-8 lg:px-12 py-6 sm:py-8 md:py-10 text-center md:text-left"
+    >
+      <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-3 mb-4">
         {/**Upper Section */}
         <motion.div
           initial={{ scale: 0 }}
           animate={isInView ? { scale: 1 } : { scale: 0 }}
           transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
+          className="flex-shrink-0"
         >
-          <Image src={image} alt={alt} />
+          <Image
+            src={image}
+            alt={alt}
+            className={isFirst ? "" : "w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"}
+          />
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="font-bold font-manrope text-3xl"
+          className="font-bold font-manrope text-2xl sm:text-3xl md:text-3xl lg:text-4xl"
         >
           {prefix}
           {formatNumber(count)}
@@ -85,7 +100,7 @@ const MetricsItem = ({ image, number, description, alt }: MetricsProps) => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.6, delay: 0.6 }}
       >
-        <p className="md:max-w-xs mt-4 text-gray-600 max-md:text-center">
+        <p className="max-w-xs mx-auto md:mx-0 text-sm sm:text-base text-gray-600">
           {description}
         </p>
       </motion.div>

@@ -40,9 +40,9 @@ const FaqSection = () => {
               </h2>
             </div>
 
-            <div className="text-gray-600 text-lg ">
+            <div className="text-gray-600 text-base sm:text-lg">
               <p className="mb-4">Any questions?</p>
-              <p className="text-[#5945FD] text-3xl"> peercash@fintech.com</p>
+              <p className="text-[#5945FD] text-xl sm:text-2xl lg:text-3xl break-all"> peercash@fintech.com</p>
             </div>
           </div>
 

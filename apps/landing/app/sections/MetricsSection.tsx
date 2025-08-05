@@ -29,8 +29,8 @@ const Items = [
 
 const MetricsSection = () => {
   return (
-    <div>
-      <div className="md:flex justify-center">
+    <div className="py-8 sm:py-12 lg:py-16 px-4">
+      <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto">
         {Items.map((item, index) => (
           <MetricsItem
             key={index}
@@ -38,6 +38,7 @@ const MetricsSection = () => {
             number={item.number}
             description={item.description}
             alt={item.alt}
+            isFirst={index === 0}
           />
         ))}
       </div>

@@ -23,17 +23,17 @@ const Footer = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="max-w-2xl mx-auto relative z-10">
-                <h2 className="text-white font-manrope text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
+              <div className="max-w-2xl mx-auto relative z-10 px-4">
+                <h2 className="text-white font-manrope text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
                   Download Our App Free and Enjoy Exclusive Features!
                 </h2>
-                <p className="text-white/80 text-sm sm:text-base lg:text-lg mb-8 sm:mb-10 lg:mb-12 max-w-2xl leading-tight mx-auto">
+                <p className="text-white/80 text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 lg:mb-10 xl:mb-12 max-w-2xl leading-relaxed mx-auto">
                   Enjoy seamless navigation, exclusive content, and personalized
                   experiences right at your fingertips. Don&apos;t miss out on
                   this opportunity to enhance your daily routine with our
                   user-friendly, free mobile app.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-stretch sm:items-center">
                   <DownloadButton
                     store="Google Play"
                     image={googlePlayIcon}
@@ -70,13 +70,13 @@ const Footer = () => {
                   Join our newsletter to stay up to date on features and
                   releases.
                 </p>
-                <div className="flex gap-2 bg-white w-100 px-3 py-1 rounded-4xl">
+                <div className="flex flex-col sm:flex-row gap-2 bg-white w-full px-3 py-1 rounded-4xl">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="flex-1 bg-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="flex-1 bg-white px-3 sm:px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                   />
-                  <button className="px-6 py-2 bg-black text-white rounded-4xl hover:bg-gray-800 transition-colors">
+                  <button className="px-4 sm:px-6 py-2 bg-black text-white text-sm sm:text-base rounded-4xl hover:bg-gray-800 transition-colors">
                     Subscribe
                   </button>
                 </div>
@@ -214,11 +214,11 @@ const Footer = () => {
           </div>
 
           {/**Bottom Section */}
-          <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 text-sm mb-4 md:mb-0">
+          <div className="border-t border-gray-200 mt-8 sm:mt-12 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-600 text-xs sm:text-sm mb-4 md:mb-0 text-center md:text-left">
               Copyright © 2024 Investo. All Rights Reserved
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3 sm:gap-4">
               {/* Facebook */}
               <a
                 href="#"

@@ -12,7 +12,7 @@ const TransformationSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Transaction List */}
           <div className="order-2 lg:order-1">
-            <div className="bg-[#F0F0F2] p-6 sm:p-8 rounded-2xl max-w-md mx-auto lg:mx-0">
+            <div className="bg-[#F0F0F2] p-4 sm:p-6 lg:p-8 rounded-2xl max-w-sm sm:max-w-md mx-auto lg:mx-0">
               <Transactions
                 logo={amazonlogo}
                 company="Amazon"
@@ -73,7 +73,7 @@ const TransformationSection = () => {
               </div>
             </div>
 
-            <button className="bg-[#171717] text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200">
+            <button className="bg-[#171717] text-white px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-full font-medium hover:bg-gray-800 transition-colors duration-200 w-full sm:w-auto">
               Get Started
             </button>
           </div>

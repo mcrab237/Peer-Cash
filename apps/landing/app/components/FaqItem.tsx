@@ -45,15 +45,15 @@ const FAQItem = ({ question, answer }: FaqProp) => {
     <div className="border-y border-gray-200">
       <button 
         onClick={handleToggle} 
-        className="w-full flex justify-between items-center py-6 text-left hover:bg-gray-50 transition-colors duration-200"
+        className="w-full flex justify-between items-start py-4 sm:py-6 text-left hover:bg-gray-50 transition-colors duration-200 px-2 sm:px-0"
       >
-        <h3 className="font-semibold font-manrope text-lg text-gray-900 pr-8">{question}</h3>
-        <div className="flex-shrink-0">
+        <h3 className="font-semibold font-manrope text-base sm:text-lg text-gray-900 pr-4 sm:pr-8 leading-relaxed">{question}</h3>
+        <div className="flex-shrink-0 mt-1">
           <div className={`transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
             {isOpen ? (
-              <FaMinus className="text-gray-900 w-4 h-4" />
+              <FaMinus className="text-gray-900 w-3 h-3 sm:w-4 sm:h-4" />
             ) : (
-              <FaPlus className="text-gray-900 w-4 h-4" />
+              <FaPlus className="text-gray-900 w-3 h-3 sm:w-4 sm:h-4" />
             )}
           </div>
         </div>
@@ -67,8 +67,8 @@ const FAQItem = ({ question, answer }: FaqProp) => {
           maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : '0px'
         }}
       >
-        <div className="pb-6 pr-12">
-          <p className="text-gray-600 leading-relaxed">{answer}</p>
+        <div className="pb-4 sm:pb-6 pr-4 sm:pr-12 px-2 sm:px-0">
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{answer}</p>
         </div>
       </div>
     </div>
