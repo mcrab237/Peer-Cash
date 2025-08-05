@@ -1,3 +1,4 @@
+import Footer from "./sections/Footer";
 import FaqSection from "./sections/FaqSection";
 import Hero from "./sections/Hero";
 import InternationSection from "./sections/InternationSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <FaqSection />
       <InternationSection/>
       <MetricsSection/>
+      <Footer/>
     </div>
   );
 }
